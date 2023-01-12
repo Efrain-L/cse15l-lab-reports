@@ -5,4 +5,5 @@
 > * Then, after going through the installation process, your VSCode should look like this afterwards.
 
 ![Image](Screenshot 2023-01-12 142117.png)
+w
 
