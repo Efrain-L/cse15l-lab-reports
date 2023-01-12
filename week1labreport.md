@@ -3,3 +3,6 @@
 > ***Step 1***
 > * You should install VSCode for the operating system that you currently have running on your computer. VSCode can be downloded from this link: https://code.visualstudio.com/
 > * Then, after going through the installation process, your VSCode should look like this afterwards.
+
+![Image](Screenshot 2023-01-12 142117.png)
+
