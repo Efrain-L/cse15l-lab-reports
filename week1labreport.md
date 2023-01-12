@@ -22,5 +22,7 @@ $ ssh cs15lwi23zz@ieng6.ucsd.edu
 ![Image](loggedin.png)
 
 > ***Step 3***
-> 
+> * Now you are logged in and you can try some commands!
+> * Here are some random commands that I have entered to show you as examples.
+![Image](usingcommands.png)
 
