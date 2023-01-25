@@ -6,7 +6,8 @@
 > * You should first and foremost download and install VSCode using this link: https://code.visualstudio.com/. 
 > * Ensure that you download the correct version for the operating system you currently have running on your computer. For example, my computer is running Windows 11; therefore on the download page I clicked the "Download for Windows" button as seen here:
 ![Image](images/vswin.png)
-> * For other operating systems, you should click on the smaller link directly below labeled "other platforms" which will then show download options for additional operating systems like Linux or MacOS.
+> * For other operating systems, you should click on the smaller link directly below the "Download for windows" button on the same page which is labeled "other platforms". This will then take you to the download options for additional operating systems such as Linux or MacOS, which looks like this:
+![Image](images/os.png)
 > * Then, after running through the installation and setup process, opening VS Code should result in a page which looks like this image below.
 ![Image](images/vscode.png)
 
@@ -21,8 +22,7 @@ $ ssh cs15lwi23zz@ieng6.ucsd.edu
 ```
 > * Entering this command will prompt for a password. Enter your password and hit enter.
 > NOTE: The password will be hidden in the terminal and it will look like you are not typing anything, so continue typing your password as normal.
-> After completing these steps, you should be greeted with a log in message in the terminal as shown below:
-
+> After completing these steps, you should be greeted with a log-in message in the terminal as shown below:
 ![Image](images/lgdin.png)
 
 > ***Step 3***
