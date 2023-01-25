@@ -3,9 +3,12 @@
 > ***Step 1***
 > 
 > Installing VSCode
-> * You should install VSCode for the operating system that you currently have running on your computer. VSCode can be downloded from this link: https://code.visualstudio.com/
-> * Then, after going through the installation process, your VSCode should look like this afterwards.
-![Image](vscode.png)
+> * You should first and foremost download and install VSCode using this link: https://code.visualstudio.com/. 
+> * Ensure that you download the correct version for the operating system you currently have running on your computer. For example, my computer is running Windows 11; therefore on the download page I clicked the "Download for Windows" button as seen here:
+![Image](images/vswin.png)
+> * For other operating systems, you should click on the smaller link directly below labeled "other platforms" which will then show download options for additional operating systems like Linux or MacOS.
+> * Then, after running through the installation and setup process, opening VS Code should result in a page which looks like this image below.
+![Image](images/vscode.png)
 
 > ***Step 2***
 > 
