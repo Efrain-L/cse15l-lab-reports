@@ -33,3 +33,19 @@ $ grep -c "the" written_2/travel_guides/berlitz1/HistoryItaly.txt
 * The grep command is searching the same text file, but this time for all occurences of the pattern "the", of which there are 420 in the file, therefore instead of grep displaying each line, only the count of the number of lines is displayed to the terminal.
 
 This option can be useful for whenever you might want to JUST know the number of times something occurs in a file or files, and not necesarilly worried about the exact lines in which it occurs.
+
+> (source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+Another grep command option is the `-r` option, which will modify grep to be able to recursively search through a directory, and grep will visit each file in the directory and sub-directories given to the command. It will then print the lines from the files in that directory which match the pattern. For example,
+```
+$ grep -r "Apple" written_2/
+written_2/travel_guides/berlitz1/WhatToJamaica.txt:        of many tours — is Appleton Distillery, situated in rolling hills just
+written_2/travel_guides/berlitz1/WhatToJamaica.txt:        local consumption. Appleton Distillery went one step further and
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt:Rum. Bacardi and other Caribbean brands, like Appletons of Jamaica, and almost all international brands of liquor can be found at good prices. Look out for coconut rum and other fruit rums — there’s a tremendous variety.
+```
+
+
+Another option for the grep command is the `-l` option, which will only print the name or names of the files in which the pattern given to the command occurs. For example,
+```
+$ grep -l "" written_2/
+```
