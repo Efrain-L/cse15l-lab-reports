@@ -93,3 +93,13 @@ written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 * This example shows the usage of the `-l` options alongside the previous `-r` option. Combining these two together makes it so that grep will search through the directory recursively, searching for the pattern and printing the name of the file it occurs in according to the behavior of the `-l` option.
 
 This particular command option would be useful if you are just trying to see if the file you are searching contains the pattern or not, and are not concerned with the count, or lines in which it occurs.
+
+> (source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+Lastly, another option for the grep command is the `-q` option. This is the "quiet" or "silent" mode for grep, which makes it so that the command does not print any output when it runs. However, the command will still return exit codes for when it is successful, or when it fails.
+```
+$ grep -q "The" written_2/travel_guides/berlitz2/Amsterdam-Intro.txt
+$ echo $?
+0
+```
+* Here the command produced no visible output to the terminal, however, it still produced an error code of 0, which can be seen using the `echo` command with the `$?` variable, meaning that the command ran succesfully.
