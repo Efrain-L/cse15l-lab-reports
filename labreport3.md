@@ -43,7 +43,28 @@ written_2/travel_guides/berlitz1/WhatToJamaica.txt:        of many tours —�
 written_2/travel_guides/berlitz1/WhatToJamaica.txt:        local consumption. Appleton Distillery went one step further and
 written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt:Rum. Bacardi and other Caribbean brands, like Appletons of Jamaica, and almost all international brands of liquor can be found at good prices. Look out for coconut rum and other fruit rums — there’s a tremendous variety.
 ```
+* The command is being used to search the entire directory and subdirectory of the `written_2/` folder for occurences of `"Apple"`. Then, grep has printed each of the lines in the entire directory which contain that Pattern, in this case there are 2 files, and 3 lines containing text which matches the pattern.
 
+```
+$ grep -r -c "The" written_2/non-fiction/OUP/Castro/
+written_2/non-fiction/OUP/Castro/chA.txt:31
+written_2/non-fiction/OUP/Castro/chB.txt:23
+written_2/non-fiction/OUP/Castro/chC.txt:15
+written_2/non-fiction/OUP/Castro/chL.txt:26
+written_2/non-fiction/OUP/Castro/chM.txt:48
+written_2/non-fiction/OUP/Castro/chN.txt:4 
+written_2/non-fiction/OUP/Castro/chO.txt:6 
+written_2/non-fiction/OUP/Castro/chP.txt:35
+written_2/non-fiction/OUP/Castro/chQ.txt:4 
+written_2/non-fiction/OUP/Castro/chR.txt:25
+written_2/non-fiction/OUP/Castro/chV.txt:16
+written_2/non-fiction/OUP/Castro/chW.txt:6 
+written_2/non-fiction/OUP/Castro/chY.txt:5 
+written_2/non-fiction/OUP/Castro/chZ.txt:4
+```
+* Using the `-r` option in conjunction with the previous `-c` option from before, the behavior of the two grep command options has been combined, where now grep is counting the number of occurences of the pattern, but does so for each file in the directory which matches the pattern, and then displaying the count for each file.
+
+> (source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 Another option for the grep command is the `-l` option, which will only print the name or names of the files in which the pattern given to the command occurs. For example,
 ```
