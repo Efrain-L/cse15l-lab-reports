@@ -103,3 +103,13 @@ $ echo $?
 0
 ```
 * Here the command produced no visible output to the terminal, however, it still produced an error code of 0, which can be seen using the `echo` command with the `$?` variable, meaning that the command ran succesfully.
+
+```
+$ grep -q "Aether" written_2/travel_guides/berlitz2/Amsterdam-Intro.txt
+$ echo $?
+1
+```
+* The exit code returned from grep here is 1 instead of 0, because the command was not able to match the given pattern in the text file provided.
+
+Although this option might not seem particularly useful at first glance, it can actually be useful for use in bash scripts. For example, if one was writing a bash script to search a pattern in a text file using grep, they could check whether or not grep was able to find the pattern using the exit code returned by the command, which they can then utilize through the `$?` variable in the rest of their script.
+> (source: https://man7.org/linux/man-pages/man1/grep.1.html)
