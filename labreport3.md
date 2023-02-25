@@ -34,7 +34,7 @@ $ grep -c "the" written_2/travel_guides/berlitz1/HistoryItaly.txt
 
 This option can be useful for whenever you might want to JUST know the number of times something occurs in a file or files, and not necesarilly worried about the exact lines in which it occurs.
 
-> (source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+> (source: [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
 
 Another grep command option is the `-r` option, which will modify grep to be able to recursively search through a directory, and grep will visit each file in the directory and sub-directories given to the command. It will then print the lines from the files in that directory which match the pattern. For example,
 ```
@@ -66,7 +66,7 @@ written_2/non-fiction/OUP/Castro/chZ.txt:4
 
 This option is incredibly useful, as it allows for grep to be used on an entire directory, so that the usage of the command can be chained for multiple files, as well as providing that useful capability for other command options when used simultaneously.
 
-> (source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+> (source: [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
 
 Another option for the grep command is the `-l` option, which will only print the name or names of the files in which the pattern given to the command occurs. For example,
 ```
@@ -94,7 +94,7 @@ written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 
 This particular command option would be useful if you are just trying to see if the file you are searching contains the pattern or not, and are not concerned with the count, or lines in which it occurs.
 
-> (source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+> (source: [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
 
 Lastly, another option for the grep command is the `-q` option. This is the "quiet" or "silent" mode for grep, which makes it so that the command does not print any output when it runs. However, the command will still return exit codes for when it is successful, or when it fails.
 ```
@@ -112,4 +112,4 @@ $ echo $?
 * The exit code returned from grep here is 1 instead of 0, because the command was not able to match the given pattern in the text file provided.
 
 Although this option might not seem particularly useful at first glance, it can actually be useful for use in bash scripts. For example, if one was writing a bash script to search a pattern in a text file using grep, they could check whether or not grep was able to find the pattern using the exit code returned by the command, which they can then utilize through the `$?` variable in the rest of their script.
-> (source: https://man7.org/linux/man-pages/man1/grep.1.html)
+> (source: [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html))
