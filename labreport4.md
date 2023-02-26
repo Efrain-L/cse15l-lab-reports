@@ -45,3 +45,13 @@ The first thing I do is type `nano` and then use autocomplete to type out the na
   
 Since the JUnit commands were recently used in my Bash History, it took fewer presses of the up arrow key to get to them, and from there I simply run each of the two commands to see that the tests now pass correctly.
   
+**Step 9: *Commit and push changes to Github***
+  
+- [ ] `git commit -a -m "k" <enter>`
+- [ ] `git push <enter>`
+
+*screenshot*
+  
+I use the commit command with the `-a` option so that all changes to files get automatically added to the commit, and use the `-m` option to give a message for the commit, which I just use a single letter to keep it short. After that I enter the command to push the changes to GitHub.
+  
+### *Task Completed!*
