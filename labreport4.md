@@ -5,7 +5,7 @@
 
 - [ ] `ssh cse15lwi23atv@ieng6.ucsd.edu <enter>`
 
-*screenshot of that*
+![Image](lab7ss/logginginssh.png)
 
 Here I am typing this command to log into the ieng6 account via ssh, and I do not need to provide a password as logging in is being handled by pre-generated ssh keys.
 
@@ -14,7 +14,7 @@ Here I am typing this command to log into the ieng6 account via ssh, and I do no
 - [ ] `git clone <^v><enter>`
 - [ ] `cd l<tab><enter>`
 
-*screenshot*
+![Image](lab7ss/cloning.png)
 
 In order to clone the repository I am using the ssh clone link on github, so that I will not need to provide a password for authentication when I want to push commits to the repository later. The authentication here is also being handled by generated ssh keys. I paste the repository link using ctrl-v. Then, I cd into the cloned repository by pressing tab in order to autocomplete `l` into `lab/7`.
 
@@ -23,7 +23,7 @@ In order to clone the repository I am using the ssh clone link on github, so tha
 - [ ] `<up><up><up><up><up><up><enter>`
 - [ ] `<up><up><up><up><up><up><enter>`
 
-*screenshot*
+![Image](lab7ss/testing.png)
 
 Since I had run the commands for the JUnit tests before, they were in my Bash history, so I was able to press the <up> arrow 6 times to re-use the JUnit commands. The first time to compile (which is `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, and the second time to run the tests (this command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`). The output of running that last command then shows that a test failed.
   
@@ -32,7 +32,8 @@ Since I had run the commands for the JUnit tests before, they were in my Bash hi
 - [ ] `nano L<tab>.j<tab><enter>`
 - [ ] `<^W><^T>43, 13<enter><backspace>2<^O><enter><^X>`
   
-*screenshots*
+![Image](lab7ss/nanoing.png)
+![Image](lab7ss/fixed.png)
   
 The first thing I do is type `nano` and then use autocomplete to type out the name of the file I want to edit, which is `ListExamples.java`. After running that command and opening nano, I use the search feature in nano by pressing ctrl-w, and then pressing ctrl-t to search by line and column number, which I know before hand is `43, 13`. Then, I edit `index1` to `index2` replacing the `1` with a `2`, and then I save and exit using ctrl-o, pressing enter, and ctrl-x in nano.
   
@@ -41,7 +42,7 @@ The first thing I do is type `nano` and then use autocomplete to type out the na
 - [ ] `<up><up><up><enter>`
 - [ ] `<up><up><up><enter>`
 
-*screenshot*
+![Image](lab7ss/fixed-tests.png)
   
 Since the JUnit commands were recently used in my Bash History, it took fewer presses of the up arrow key to get to them, and from there I simply run each of the two commands to see that the tests now pass correctly.
   
@@ -50,7 +51,7 @@ Since the JUnit commands were recently used in my Bash History, it took fewer pr
 - [ ] `git commit -a -m "k" <enter>`
 - [ ] `git push <enter>`
 
-*screenshot*
+![Image](lab7ss/pushed.png)
   
 I use the commit command with the `-a` option so that all changes to files get automatically added to the commit, and use the `-m` option to give a message for the commit, which I just use a single letter to keep it short. After that I enter the command to push the changes to GitHub.
   
