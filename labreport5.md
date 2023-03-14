@@ -38,4 +38,9 @@ ssh cs15lwi23atv@ieng6.ucsd.edu 'bash -s' < ./task.sh git@github.com:Efrain-L/la
 ```
 * How this command works is that, it will log in to my ieng6 course account through ssh, and the `'bash -s'` part of the command will then execute a bash command with the `-s` option, which helps with reading the executable command with standard input. Then `<` followed by the script file `task.sh` which is in my current local directory, and the SSH clone link for the respository passed as an argument. (source: [https://www.baeldung.com/linux/run-shell-script-remote-ssh](https://www.baeldung.com/linux/run-shell-script-remote-ssh)
 
-
+Finally, here are some screenshots of the process:
+[!image](images/scriptstart.png)
+[!image](images/runpart1.png)
+[!image](images/runpart2.png)
+[!image](images/github_before.png)
+[!image](images/github_after.png)
