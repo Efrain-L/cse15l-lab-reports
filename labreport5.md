@@ -32,7 +32,10 @@ Going through the script one command at a time, starting with the first line:
 * `git commit -m "SCRIPTED"` Then I commit those changes with the message "SCRIPTED" to show that it was the script that made this commit.
 * `git push` Finally, the script pushed those changes to the remote repository on Github.
 
-In order to actually run this command, after having forked the repository and copying the forked repository's SSH clone link, I run the following command on my local machine:
+In order to actually run the script, after having forked the repository and copying the forked repository's SSH clone link, I run the following command on my local machine:
 ```sh
 ssh cs15lwi23atv@ieng6.ucsd.edu 'bash -s' < ./task.sh git@github.com:Efrain-L/lab7.git
 ```
+* How this command works is that, it will log in to my ieng6 course account through ssh, and the `'bash -s'` part of the command will then execute a bash command with the `-s` option, which helps with reading the executable command with standard input. Then `<` followed by the script file `task.sh` which is in my current local directory, and the SSH clone link for the respository passed as an argument. (source: [https://www.baeldung.com/linux/run-shell-script-remote-ssh](https://www.baeldung.com/linux/run-shell-script-remote-ssh)
+
+
